@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>630ca28e-4cf7-4842-b125-37cdfc6cfb4b</ProjectGuid>
+    <ProjectGuid>{630CA28E-4CF7-4842-B125-37CDFC6CFB4B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>bytePassion.Library.Essentials.WpfTools</RootNamespace>
@@ -31,24 +31,97 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System"/>
-    
-    <Reference Include="System.Core"/>
-    <Reference Include="System.Xml.Linq"/>
-    <Reference Include="System.Data.DataSetExtensions"/>
-    
-    
-    <Reference Include="Microsoft.CSharp"/>
-    
-    <Reference Include="System.Data"/>
-    
-    <Reference Include="System.Net.Http"/>
-    
-    <Reference Include="System.Xml"/>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Application\BytePassionApplication.cs" />
+    <Compile Include="Application\IApplicationLifeCycle.cs" />
+    <Compile Include="Application\IWindowBuilder.cs" />
+    <Compile Include="Computations\AddOffsetToDoubleConverter.cs" />
+    <Compile Include="Adorner\AdornedControl.cs" />
+    <Compile Include="Adorner\AdornerPlacement.cs" />
+    <Compile Include="Adorner\FrameworkElementAdorner.cs" />
+    <Compile Include="Computations\AngleInverter.cs" />
+    <Compile Include="Computations\BoolInverter.cs" />
+    <Compile Include="Converter\AngleToDoubleConverter.cs" />
+    <Compile Include="Behaviors\AlwaysScrollDownBehavior.cs" />
+    <Compile Include="Behaviors\DisableRightClickBehavior.cs" />
+    <Compile Include="Behaviors\GetFocusOnLoadedBehavior.cs" />
+    <Compile Include="Behaviors\GridViewSplitColumnsEqualyBehavior.cs" />
+    <Compile Include="Behaviors\HeightWidthReportingBehavior.cs" />
+    <Compile Include="Behaviors\KeepQuadratic.cs" />
+    <Compile Include="Behaviors\ListViewAutoScollDownBehavior.cs" />
+    <Compile Include="Behaviors\MoveHorizontalBehavior.cs" />
+    <Compile Include="Behaviors\ObjectDragBehavior.cs" />
+    <Compile Include="Behaviors\ObjectDropBehavior.cs" />
+    <Compile Include="Behaviors\ScrollViewerAutoScrollDownBehavior.cs" />
+    <Compile Include="Behaviors\SizeReportingBehavior.cs" />
+    <Compile Include="Converter\BoolToCollapsedVisibilityConverter.cs" />
+    <Compile Include="Converter\BoolToHiddenVisibilityConverter.cs" />
+    <Compile Include="Converter\BoolToNullableBoolConverter.cs" />
+    <Compile Include="Converter\ColorToSolidColorBrushConverter.cs" />
+    <Compile Include="Command\Command.cs" />
+    <Compile Include="Command\ParameterrizedCommand.cs" />
+    <Compile Include="Command\Updater\ICommandUpdater.cs" />
+    <Compile Include="Command\Updater\PropertyChangedCommandUpdater.cs" />
+    <Compile Include="Command\Updater\SharedStateCommandUpdate.cs" />
+    <Compile Include="Command\Updater\SharedStateReadOnlyCommandUpdate.cs" />
+    <Compile Include="Converter\InvertedAngleToDoubleConverter.cs" />
+    <Compile Include="Converter\InvertedBoolToCollapsedVisibilityConverter.cs" />
+    <Compile Include="Converter\SemanticDoubleTypeToDoubleConverter.cs" />
+    <Compile Include="Computations\DivideAngleBy2.cs" />
+    <Compile Include="Computations\DivideDoubleBy2.cs" />
+    <Compile Include="Computations\GetHeightFromSize.cs" />
+    <Compile Include="Computations\GetWidthFromSize.cs" />
+    <Compile Include="Computations\MultiplyDoubles.cs" />
+    <Compile Include="ViewModelBase\ForFody\NextGenViewModel.cs" />
+    <Compile Include="ViewModelBase\Standard\IViewModel.cs" />
+    <Compile Include="Panels\DeckPanel.cs" />
+    <Compile Include="Positioning\Angle.cs" />
+    <Compile Include="Positioning\AngleInterval.cs" />
+    <Compile Include="Positioning\Degree.cs" />
+    <Compile Include="FrameworkExtensions\DispatcherExtension.cs" />
+    <Compile Include="ConverterBase\GenericFiveToOneValueConverter.cs" />
+    <Compile Include="ConverterBase\GenericFourToOneValueConverter.cs" />
+    <Compile Include="ConverterBase\GenericParameterizedValueConverter.cs" />
+    <Compile Include="ConverterBase\GenericThreeToOneValueConverter.cs" />
+    <Compile Include="ConverterBase\GenericTwoToOneValueConverter.cs" />
+    <Compile Include="ConverterBase\GenericValueConverter.cs" />
+    <Compile Include="Positioning\Height.cs" />
+    <Compile Include="Positioning\Length.cs" />
+    <Compile Include="Positioning\Point.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Positioning\Radians.cs" />
+    <Compile Include="Positioning\Size.cs" />
+    <Compile Include="Positioning\Width.cs" />
+    <Compile Include="Positioning\XCoord.cs" />
+    <Compile Include="Positioning\YCoord.cs" />
+    <Compile Include="Positioning\ZCoord.cs" />
+    <Compile Include="Adorner\UIElementAdorner.cs" />
+    <Compile Include="Converter\XCoordAndOffsetToDoubleConverter.cs" />
+    <Compile Include="Converter\XCoordToDoubleConverter.cs" />
+    <Compile Include="Converter\YCoordAndOffsetToDoubleConverter.cs" />
+    <Compile Include="Converter\YCoordToDoubleConverter.cs" />
+    <Compile Include="ViewModelBase\Standard\ViewModel.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\bytePassion.Library.Essentials.Tools\bytePassion.Library.Essentials.Tools.csproj">
+      <Project>{8b3991b6-d4cc-40eb-b538-a7c3bab922cb}</Project>
+      <Name>bytePassion.Library.Essentials.Tools</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
- </Project>
+</Project>

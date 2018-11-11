@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28010.2050
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bytePassion.Library.Essentials.Tools", "bytePassion.Library.Essentials.Tools\bytePassion.Library.Essentials.Tools.csproj", "{8B3991B6-D4CC-40EB-B538-A7C3BAB922CB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bytePassion.Library.Essentials.WpfTools", "bytePassion.Library.Essentials.WpfTools\bytePassion.Library.Essentials.WpfTools.csproj", "{630CA28E-4CF7-4842-B125-37CDFC6CFB4B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{8B3991B6-D4CC-40EB-B538-A7C3BAB922CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B3991B6-D4CC-40EB-B538-A7C3BAB922CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B3991B6-D4CC-40EB-B538-A7C3BAB922CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{630CA28E-4CF7-4842-B125-37CDFC6CFB4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{630CA28E-4CF7-4842-B125-37CDFC6CFB4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{630CA28E-4CF7-4842-B125-37CDFC6CFB4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{630CA28E-4CF7-4842-B125-37CDFC6CFB4B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
