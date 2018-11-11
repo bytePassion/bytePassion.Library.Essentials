@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2050
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bytePassion.Library.Essentials.Tools", "bytePassion.Library.Essentials.Tools.csproj", "{8B3991B6-D4CC-40EB-B538-A7C3BAB922CB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bytePassion.Library.Essentials.Tools", "bytePassion.Library.Essentials.Tools\bytePassion.Library.Essentials.Tools.csproj", "{8B3991B6-D4CC-40EB-B538-A7C3BAB922CB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
