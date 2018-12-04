@@ -4,7 +4,7 @@ using System.Windows.Interactivity;
 
 namespace bytePassion.Library.Essentials.WpfTools.Behaviors
 {
-	public class MoveHorizontalBehavior : Behavior<FrameworkElement>
+    public class MoveHorizontalBehavior : Behavior<FrameworkElement>
 	{
 		public static readonly DependencyProperty HorizontalMovementDeltaProperty 
 			= DependencyProperty.Register(nameof(HorizontalMovementDelta), 
@@ -35,7 +35,7 @@ namespace bytePassion.Library.Essentials.WpfTools.Behaviors
 			AssociatedObject.MouseLeftButtonUp          += OnAssociatedObjectMouseLeftButtonUp;
 			AssociatedObject.MouseMove                  += OnAssociatedObjectMouseMove;
 
-			container = Application.Current.MainWindow;
+			container = System.Windows.Application.Current.MainWindow;
 			mouseIsDown = false;
 		}
 
